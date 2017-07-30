@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../../../../apps/web/views/home/index'
 
 RSpec.xdescribe Web::Views::Home::Index do
