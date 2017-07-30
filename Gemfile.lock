@@ -67,6 +67,9 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    guard-rubocop (1.3.0)
+      guard (~> 2.0)
+      rubocop (~> 0.20)
     hanami (1.0.0)
       bundler (~> 1.13)
       concurrent-ruby (~> 1.0)
@@ -226,6 +229,7 @@ DEPENDENCIES
   dotenv (~> 2.0)
   guard
   guard-rspec
+  guard-rubocop
   hanami (~> 1.0)
   hanami-model (~> 1.0)
   overcommit
