@@ -13,8 +13,10 @@ gem 'slim'
 group :development do
   # Code reloading
   # See: http://hanamirb.org/guides/projects/code-reloading
-  gem 'rubocop'
   gem 'shotgun'
+
+  gem 'overcommit'
+  gem 'rubocop'
 end
 
 group :test, :development do

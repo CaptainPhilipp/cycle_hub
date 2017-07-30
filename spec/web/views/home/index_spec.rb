@@ -8,7 +8,7 @@ RSpec.xdescribe Web::Views::Home::Index do
   let(:view)      { described_class.new(template, exposures) }
   let(:rendered)  { view.render }
 
-  it 'exposes #foo' do
+  it 'Exposes #foo' do
     pending 'This is an auto-generated test. Edit it and add your own tests.'
 
     # Example
