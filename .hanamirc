@@ -1,4 +1,4 @@
 project=cycle_hub
 architecture=container
 test=rspec
-template=erb
+template=slim
