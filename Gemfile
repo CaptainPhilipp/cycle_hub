@@ -15,6 +15,9 @@ group :development do
   # See: http://hanamirb.org/guides/projects/code-reloading
   gem 'shotgun'
 
+  gem 'guard'
+  gem 'guard-rspec', require: false
+
   gem 'overcommit'
   gem 'rubocop'
 end
