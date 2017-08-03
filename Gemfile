@@ -25,6 +25,9 @@ end
 
 group :test, :development do
   gem 'dotenv', '~> 2.0'
+
+  gem 'pry'
+  gem 'pry-byebug'
 end
 
 group :test do
