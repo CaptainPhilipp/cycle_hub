@@ -3,7 +3,7 @@
 module HasContainer
   def self.included(klass)
     klass.class_eval do
-      def self.new(container = CONTAINER)
+      def self.new(container = ROM_CONTAINER)
         super(container)
       end
     end

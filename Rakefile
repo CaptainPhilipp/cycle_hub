@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-require 'rake'
-require 'rom/sql'
+require_relative 'tasks/rake_tasks'
 require 'rom/sql/rake_task'
 
 begin
@@ -12,8 +11,11 @@ rescue LoadError
   nil
 end
 
+task default: :spec
+
 namespace :db do
-  task :setup do
-    # TODO: ROM setup code
+  task setup: :environment do
+    require 'rom/sql'
+    ROM::SQL::RakeSupport.env = ROM::Configuration.new(:sql, ENV['DATABASE_URL'])
   end
 end
