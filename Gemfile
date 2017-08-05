@@ -3,7 +3,6 @@
 source 'https://rubygems.org'
 
 gem 'hanami', '~> 1.0'
-gem 'hanami-model', '~> 1.0'
 gem 'rake'
 
 gem 'pg'
