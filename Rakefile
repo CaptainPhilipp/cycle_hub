@@ -14,5 +14,6 @@ end
 
 namespace :db do
   task :setup do
+    # TODO: ROM setup code
   end
 end
