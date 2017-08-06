@@ -17,17 +17,19 @@ Metrics/LineLength:
 
 # top-level documentation
 Style/Documentation:
-  Exclude:
-    - '/**/*'
+  Include:
+    - 'lib/*/mixins/*'
 
 # # Configuration parameters: CountComments, ExcludedMethods.
 Metrics/BlockLength:
+  ExcludedMethods:
+    - 'configure'
   Exclude:
-    - 'apps/web/application.rb'
     - 'Guardfile'
 
 # Configuration parameters: EnforcedStyle, SupportedStyles.
 # SupportedStyles: nested, compact
 Style/ClassAndModuleChildren:
   Exclude:
-    - '/**/*'
+    - 'apps/*/controllers/**/*'
+    - 'apps/*/views/**/*'
